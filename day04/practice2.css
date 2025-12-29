@@ -6,29 +6,28 @@
     font-display: swap;
 }
 
-
-
 .title{
     font-family: 'Pretendard';
-    text-align: center;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: bold;
     font-style: normal;
     letter-spacing: 2px;
-    input{background-color: darkseagreen;}
 } /* 강의명, 만족도조사 */
 
 .content{
     text-align: center;
     font-family: 'Pretendard';
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: bold;
     font-style: normal;
 } /* 만족도 조사 질문 내용 */
 
+tr1{
+    background-color: darkseagreen;
+}
+
 .writer{
-    text-align: center;
     font-family: 'Pretendard';
-    font-size: 20px;
+    font-size: 18px;
     color: red;
 } /* 건의사항 */
