@@ -1,0 +1,48 @@
+
+.title{
+    font-family: "궁서";
+    font-size: 55px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'YeogiOttaeJalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+.content{
+    font-family: 'YeogiOttaeJalnan';
+    font-size: 20px;
+    color: blue;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    line-height: 150%;
+}
+
+.writer1{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline overline line-through;
+    color: red;
+    text-shadow: 1px 1px 3px grey;
+}
+
+.writer2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline overline line-through;
+    color: red;
+    text-shadow: 1px 1px 5px grey;
+}
+
+.writer3{
+   font-size: 20px;
+    text-align: center;
+    text-decoration: underline overline line-through;
+    color: red;
+    text-shadow: 1px 1px 5px grey;
+}

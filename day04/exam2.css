@@ -1,0 +1,32 @@
+
+.title{
+    font-family: "맑은 고딕","굴림"; /* 글꼴 폰트 */
+    font-size: 40px; /* 글꼴 사이즈 */
+    font-weight: bold; /* 글꼴 진하게 */
+    font-style: italic; /* 글꼴 기울기 */
+}
+/* 외부폰트 : 1. 영문 구글폰트 2. 한글 눈누폰트 */
+@font-face{
+    font-family: 'Aggravo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+.content{
+    font-family: 'Aggravo';
+    color: brown; /* 글꼴색상 */
+    word-spacing: 2px; /* 단어간격 */
+    letter-spacing: 2px; /* 글자간격 */
+    line-height: 150%; /* 줄간격 */
+}
+.writer{
+    text-align: center; /* content 내용물의 가로 정렬 left center right */
+    text-decoration: underline overline line-through;
+    /* 선 긋기 : underline(밑줄) overline(윗줄) line-through(취소선) */
+    text-shadow: 1px 1px 1px grey ; 
+    /* 텍스트 그림자 : x축(+right -left) y축(+bottom -top)  */
+    color: green; /* 방법1 : */
+    color: rgb(0, 124, 0); /* 방법2 */
+    color: #008000; /* 방법3 : 헥스코드(6자릿수로 16진코드) */
+}
