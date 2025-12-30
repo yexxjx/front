@@ -1,0 +1,33 @@
+
+*{
+    padding: 10px;
+    margin: 10px
+}
+
+.로그인구역{
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0px 5px 5px pink;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.아이디입력{
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 1px solid grey;
+}
+
+.비밀번호입력{
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    border: 1px solid grey; 
+}
+
+button{
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    padding: 5px 12px;
+}

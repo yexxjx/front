@@ -3,7 +3,7 @@
 let fruitList = [ '사과', '바나나' ];
 사용자로부터 새로운 과일 이름을 입력받아, fruitList에 이미 존재하는 과일이면 '이미 존재하는 과일입니다.'를 출력하세요. 
 존재하지 않는 과일이면 배열에 추가한 뒤, 변경된 배열 전체를 출력하는 프로그램을 작성하시오.*/
-/*
+
 let fruitList=['사과','바나나'];
 let fruit=prompt("과일");
 if(fruitList.indexOf(fruit)!=-1){console.log("이미 존재하는 과일입니다.");}
@@ -11,27 +11,27 @@ else{
     fruitList.push (fruit);
     console.log(fruitList);
 }
-*/
+
 /*문제 2: 성별에 따른 색상 지정
 주민등록번호 13자리를 문자열로 입력받습니다. 성별을 나타내는 7번째 숫자가 '1' 또는 '3'이면 'blue'를, '2' 또는 '4'이면 'red'를 출력하는 프로그램을 작성하시오.*/
-/*
+
 let num=prompt("주민등록번호");
 if(num[6]=="1"||num[6]=="3"){console.log("blue");} // 인덱스는 0부터니까 7번째 자리는 [6]으로 기록
 else{console.log("red");}
-*/
+
 /*문제 3: 구매 금액에 따른 할인율 적용
 사용자로부터 총 구매 금액을 입력받습니다. 구매 금액에 따라 아래와 같이 할인율을 적용하여 최종 결제 금액을 출력하는 프로그램을 작성하시오.
 50,000원 이상: 10% 할인
 30,000원 이상 50,000원 미만: 5% 할인
 10,000원 이상 30,000원 미만: 1% 할인
 10,000원 미만: 할인 없음*/
-/*
+
 let money=prompt("구매 금액");
 if(money>=50000){console.log(money*0.9);}
 else if(money>=30000){console.log(money*0.95);}
 else if(money>=10000){console.log(money*0.99);}
 else{console.log("money");}
-*/
+
 /*문제 4: 월(Month)에 따른 계절 판별
 1부터 12 사이의 월(Month)을 숫자로 입력받아, 해당하는 계절을 출력하는 프로그램을 작성하시오.
 봄: 3, 4, 5월
@@ -39,17 +39,17 @@ else{console.log("money");}
 가을: 9, 10, 11월
 겨울: 12, 1, 2월
 만약 1~12 이외의 숫자를 입력하면 '잘못된 월입니다.'를 출력하세요.*/
-/*
+
 let month=prompt("월")
 if(month==12||month==1||month==2){console.log("겨울");}
 else if(month==3||month==4||month==5){console.log("봄");}
 else if(month==6||month==7||month==8){console.log("여름");}
 else if(month==9||month==10||month==11){console.log("가을");}
 else{console.log("잘못된 월입니다.");}
-*/
+
 /*문제 5: 세 수 중 가장 큰 수 찾기
 서로 다른 세 개의 정수를 입력받아, 가장 큰 수를 출력하는 프로그램을 작성하시오.*/
-/*
+
 let int1=prompt("숫자1");
 let int2=prompt("숫자2");
 let int3=prompt("숫자3");
@@ -58,20 +58,20 @@ let max = int1; // 첫번째 값을 가장 큰수로 가정
 if(max<int2){max=int2;} // 만약에 두번째 값이 가장 큰 수보다 크면 대입/수정
 if(max<int3){max=int3;} // elseif 대신에 다중 if 처리
 console.log(max)
-*/
+
 /*문제 6: 윤년 판별기
 사용자로부터 연도(year)를 입력받아 해당 연도가 윤년인지 평년인지 판별하는 프로그램을 작성하시오.
 윤년 조건: 연도가 4의 배수이면서, 100의 배수는 아닐 때 또는 연도가 400의 배수일 때
 출력 예시: '2024년은 윤년입니다.' 또는 '2023년은 평년입니다.'*/
-/*
+
 let year=prompt("연도");
 if(year%4 ==0 && year%100 !=0 || year%400 ==0){console.log("2024년은 윤년입니다.");}
 else{console.log("2023년은 평년입니다.");}
-*/
+
 /*문제 7: 세 수 오름차순 정렬
 서로 다른 세 개의 정수를 입력받아, 오름차순(작은 수부터 큰 수 순서)으로 정렬하여 출력하는 프로그램을 작성하시오.
 예시: 17, 4, 8 입력 시 4, 8, 17 출력*/
-/*
+
 let int4=prompt("숫자4");
 let int5=prompt("숫자5");
 let int6=prompt("숫자6");
@@ -79,8 +79,8 @@ let int6=prompt("숫자6");
 let min=int4;
 if(min>int5){min=int5;}
 if(min>int6){min=int6;}
-console.log(min)
-*/
+console.log(min) // 오름차순 모르겠음
+
 /*문제 8: 가위바위보 게임
 두 명의 플레이어가 참여하는 가위바위보 게임을 만드시오.
 입력: 플레이어 1과 플레이어 2는 각각 0(가위), 1(바위), 2(보) 중 하나의 숫자를 입력합니다.
@@ -90,16 +90,16 @@ console.log(min)
 출력: 플레이어 1이 이기면 '플레이어1 승리'를 출력합니다.
       플레이어 2가 이기면 '플레이어2 승리'를 출력합니다.
       두 플레이어가 같은 것을 내면 '무승부'를 출력합니다.*/
-/*
+
 let p1=prompt("가위바위보 0(가위), 1(바위), 2(보)");
 let p2=prompt("가위바위보 0(가위), 1(바위), 2(보)");
 
-if(p1==p2){console.log("무승부");}
 else if(p1==0 && p2==2){console.log("플레이어1 승리");}
 else if(p1==1 && p2==0){console.log("플레이어1 승리");}
 else if(p1==2 && p2==1){console.log("플레이어1 승리");}
+if(p1==p2){console.log("무승부");}
 else{console.log("플레이어2 승리");}
-*/
+
 /*문제 9: 주차 차량 위치 검색
 주차장 차량 정보가 다음과 같이 두 개의 배열로 관리되고 있습니다. 두 배열에서 같은 인덱스는 동일한 차량의 정보를 의미합니다.
 차량 번호 목록: let carArray = [ '250어7142', '142가7415', '888호8888' ];
@@ -109,12 +109,15 @@ else{console.log("플레이어2 승리");}
 
 let carArray = [ '250어7142', '142가7415', '888호8888' ];
 let locationArray = [ 'A1', 'B3', 'C2' ];
-let carnum=prompt("차량 번호");
-if(){console.log(`${locationArray[carnum]}`);}
-else{console.log(`차량이 존재하지 않습니다.`);}
+let car=prompt("차량 번호"); // 그냥 모름
 
 /*문제 10: 수강 신청 목록에서 과목 제외하기
 현재 수강 신청한 과목 목록이 배열로 주어져 있습니다.
 let courseList = ['수학', '영어', '과학', '국어'];
 사용자로부터 제외하고 싶은 과목명을 입력받아, courseList에 해당 과목이 존재하면 목록에서 삭제한 뒤 변경된 배열 전체를 출력하세요. 
 만약 존재하지 않는 과목이면 '해당 과목은 신청 목록에 없습니다.'를 출력하는 프로그램을 작성하시오.*/
+
+let courseList = ['수학', '영어', '과학', '국어'];
+let except=prompt("제외하고 싶은 과목");
+if(courseList.splice(0,1)){console.log(courseList);} // 해당 과목 삭제를 모르겠음
+else{console.log("해당 과목은 신청 목록에 없습니다.");}
