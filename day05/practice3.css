@@ -1,0 +1,33 @@
+/* 1. 이미지 */
+.사진구역 > img{
+    width: 25px;
+    margin: 30px;
+}
+
+/* 제목 */
+.제목{
+    font-weight: bold;
+}
+
+.오렌지{
+    color: orange;
+}
+
+.제목강조{
+    display: inline;
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.내용{
+    width: 400px;
+    background-color: #0f6878;
+    color: white;
+    padding: 30px 20px;
+    margin: 20px 0px;
+}
+
+.내용>p{
+    margin: 0px; padding: 0px;
+}
+
