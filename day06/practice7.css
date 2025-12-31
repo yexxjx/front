@@ -38,7 +38,6 @@ body{
     padding: 10px;
     width: 270px;
     margin-bottom: 10px;
-    margin-botto;
 }
 
 .button1{
@@ -54,8 +53,7 @@ body{
 .button2{
     border-radius: 5px;
     font-size: 13px;
-    margin-top:;
-    padding: 10px;
+    padding:10px;
     background-color: #42b72a;
     color: white;
     font-weight: bold; 
@@ -65,7 +63,7 @@ body{
 .forget>a{
     text-decoration: none;
     color: #0866ff;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .page{
@@ -77,4 +75,46 @@ body{
     color: black;
     font-weight: bold;
     text-decoration: none;
+}
+
+.dk{
+    font-size: 10px;
+    background-color: white;
+    padding: 20px;
+}
+.footer{
+    width: 980px;
+    margin: 0px auto;
+}
+
+.directionList{
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.directionList > li > a{
+    margin: 5px;
+    text-decoration: none;
+    color: rgb(126, 125, 125);
+}
+
+.languageList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    color: rgb(126, 125, 125);
+}
+.languageList > li{
+    margin: 5px;
+}
+.mvlcopyright{
+    text-align: left;
+    color: rgb(126, 125, 125);
 }
