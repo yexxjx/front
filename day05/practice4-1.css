@@ -1,0 +1,30 @@
+
+.로그인구역{
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0px 5px 5px pink;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.입력구역>input{
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: 1px solid grey;
+    margin-bottom: 20px;
+}
+
+
+button{
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 5px 12px;
+}
+
+.서브제목>a{
+    text-decoration: none;
+}

@@ -1,0 +1,40 @@
+
+.product{
+    border: 1px solid lightgrey;
+    width: 305px;
+}
+
+.productimg > img{
+    width: 300px;
+    /* 이미지가 부모 요소보다 크면 자동 크기 맞춤 /object-fit: cover */
+}
+
+.title{
+    padding: 10px 0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.inf{
+    font-size: 13px;
+    padding: 10px 0px;
+}
+
+.orange{
+    color: orange;
+    font-weight: bold;
+}
+
+.etc{
+    padding-top: 10px;
+}
+
+.productinf{
+    padding: 10px;
+    border-top: 1px solid lightgrey;
+}
