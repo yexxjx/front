@@ -63,3 +63,5 @@ for(let i=1; i<=5; i++){
 // (3) 무한 루프 : 종료가 없는 계속되는 반복문
 // for( ; ; ){console.log(1);}
 // while(true){console.log(1);}
+// 활용 : for( ; ;){let a=prompt("무한입력");}
+// 활용 : for( ; ;){let b=prompt("무한입력"); if(b=="x")break;}
