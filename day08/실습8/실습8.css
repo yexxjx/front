@@ -50,3 +50,19 @@ li{list-style-type: none;}
 .studio2>img{width: 300px;}
 .studio3>img{width: 300px;}
 .studio4>img{width: 300px;}
+
+#footer{
+    padding: 50px;
+    background-color: rgb(14, 14, 43);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom1{
+    display: flex;
+}
+
+.bottom1>li{
+    border-right: 1px solid white
+}
