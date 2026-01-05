@@ -59,10 +59,29 @@ li{list-style-type: none;}
     justify-content: space-between;
 }
 
+.footerinner{
+    display: flex;
+    margin: 0 auto;
+}
+
+.bottomenu{
+    margin-left: 100px;
+}
+
 .bottom1{
     display: flex;
 }
 
+.bottom2{
+    margin-top: 20px;
+}
+
 .bottom1>li{
-    border-right: 1px solid white
+    border-right: 1px solid white;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.footerinner>.photo{
+    margin-left: 80px;
 }
