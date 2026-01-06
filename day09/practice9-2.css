@@ -1,0 +1,25 @@
+
+li{list-style-type: none;}
+#plus{
+
+    border-radius: 999px;
+    width: 100px; height: 100px;
+    font-size: 80px;
+    background-color: black; color: white;
+    position: fixed;
+    right: 20px; bottom: 20px;
+}
+
+.menu{
+    padding: 10px 20px;
+    position: relative;
+}
+
+.submenu{
+    position: absolute;
+    width: 100%;
+    background-color: skyblue;
+    top:40px;
+}
+
+#plus>ul:hover .submenu{display: block;}
