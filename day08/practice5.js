@@ -1,3 +1,4 @@
+
 /*[ 실습5 ]
 문제 1: 배열에서 최댓값 찾기
 주어진 숫자 배열에서 가장 큰 값을 찾아 콘솔에 출력하는 프로그램을 작성하시오. (단, Math.max() 함수 사용 금지) */
@@ -115,12 +116,27 @@ console.log(numbers1);
 
 /*문제 7: 재고 관리 시스템
 두 개의 배열 products(상품 목록)와 stock(재고 수량)이 있습니다. 사용자로부터 구매할 상품명과 수량을 입력받아, 재고가 충분하면 "구매 완료!"를 출력하고 재고를 차감하세요. 재고가 부족하면 "재고가 부족합니다."를 출력합니다. */
-/* let products = ['볼펜', '노트', '지우개'];
-let stock = [10, 5, 20];
+// let products = ['볼펜', '노트', '지우개'];
+// let stock = [10, 5, 20];
+// // 배열 내 입력 받은 값과 동일한 값 찾기 : [1]indexOf [2]for
+// let name=prompt("제품명");
+// let find=-1; // 찾은 인덱스 저장하는 변수, -1 못 찾음 의미
+// for(let i=0;i<products.length-1;i++){
+//     if(products[i]==name){ // 만약에 i번째 제품명과 입력 받은 값과 같으면
+//         find=i; // 찾은 i번째 인덱스 대입/기억
+//         break; // 찾았으면 뒤에 있는 값은 확인 할 필요 없으므로 [반복문 탈출]
+//     }
+// } // !!!!! 모든 { } 는 {지역 특징} 갖는다. 즉) { } 안에서 선언(let/const)한 변수는 중괄호가 끝나면 사라진다.
 
-let product=prompt("상품명");
-let sstock=prompt("수량"); */
-
+// if(find==-1){console.log("없는 제품명입니다.");}
+// else{
+//     let count=Number(prompt("수령"));
+//     if(stock[find]>=count){
+//        stock[find]-=count;
+//        console.log("구매 완료");
+//     }
+//     else{console.log("재고가 부족합니다.")}
+// }
 
 /*문제 8: 영화 평점 시각화하기
 주어진 영화 이름과 평점 배열을 이용하여, 각 영화의 평점을 별(★)로 시각화하여 HTML에 출력하는 프로그램을 작성하시오.
@@ -139,6 +155,26 @@ for 반복문을 사용하여 모든 영화를 순회합니다.
 글래디에이터2   ★★★★★★★☆☆☆
 청설            ★★★★★★☆☆☆☆
 */
+
+let movieNames = ['히든페이스', '위키드', '글래디에이터2', '청설'];
+let movieRatings = [8, 4, 7, 6];
+// 순회 : 배열 내 첫 인덱스(0번)부터 마지막인덱스(length-1) 까지
+// 누적합계/누적/추가 : 변수+=새로운값, 변수=변수+새로운값
+let html=""; // 빈 변수 선언
+for(let index=0; index<=movieNames.length-1;index++){
+    let movie=movieNames[index];
+    html+=`<div>${movie}`;
+    
+    let rating=movieRatings[index]; // i번째 평점 가져오기
+
+    for(let r=1; r<=10;r++){
+        if(rating>=r){html+=`<span> ● </span>`}
+        else(html+=`<span> ○ </span>`)
+    }
+    html+=`</div>`;
+}
+document.write(html);
+
 /*문제 9: 좌석 예약 상태 표시하기
 총 6개의 좌석 상태 정보가 담긴 배열을 이용하여, 좌석 배치도와 상태를 HTML에 출력하는 프로그램을 작성하시오.
 (1). 초기 데이터
@@ -154,9 +190,19 @@ for 반복문을 사용하여 6개의 좌석을 모두 출력합니다.
 (3). 출력 예시 (HTML)
 빈좌석 예약석 
 예약석 빈좌석
-예약석 빈좌석
-
-*/
+예약석 빈좌석 */
+let seatStatus = ['빈좌석', '예약석', '예약석', '빈좌석', '예약석', '빈좌석'];
+let html2="";
+for(let index=0; index<=seatStatus.length-1;index++){
+    html2+=`<span style=" color : ${seatStatus[index]== "빈좌석" ? "blue" : "red"};">
+                ${seatStatus[index]}
+            </span>
+            `;
+    if((index+1)%2==0){ // 인덱스가 짝수이면 줄 바꿈 처리
+        html2+=`<br/>`;
+    }
+}
+document.write(html2);
 
 /*문제 10: 주차 요금 정산하기
 차량별 주차 시간 데이터가 주어졌을 때, 아래의 요금 규정에 따라 각 차량이 지불해야 할 최종 주차 요금을 계산하여 HTML에 출력하는 프로그램을 작성하시오.
@@ -181,6 +227,30 @@ HTML에 차량 번호, 주차 시간, 최종 요금을 한 줄씩 출력합니�
 (힌트)
 기본 시간(30분)을 초과한 시간을 계산하고, parseInt() 함수를 사용하여 10분 단위로 버림 처리하면 추가 요금 단위를 쉽게 계산할 수 있습니다.
 추가 요금 단위 계산식:parseInt( (총 주차시간 - 30) / 10 )
-계산 예시:65분 주차 시 parseInt( (65 - 30) / 10 )는 parseInt(3.5)가 되어 결과는 3이 됩니다. 따라서 추가 요금은 3 * 500원으로 계산됩니다.
+계산 예시:65분 주차 시 parseInt( (65 - 30) / 10 )는 parseInt(3.5)가 되어 결과는 3이 됩니다. 따라서 추가 요금은 3 * 500원으로 계산됩니다.*/
 
-*/
+let carNumbers = ['210어7125', '142가7415', '888호8888', '931나8234'];
+let usageMinutes = [65, 30, 140, 420];
+
+let html3="";
+for(let index=0; index<=carNumbers.length-1;index++){
+    // [1] 차량번호 출력
+    let number=carNumbers[index]; // i번째 차량 번호 꺼내기
+    html3+=`<div><span> ${number}</span>`;
+
+        // [2] 시간 출력
+    let min=usageMinutes[index]; // i번째 이용 시간[분] 꺼내기
+    html3+=`<span> ${min} 분 주차 </span>`;
+
+        // [3] 요금 출력
+    let money=0; // 요금을 저장하는 변수
+    if(min<=30){money=1000;} // 만약에 사용 시간이 30분 이하이면 요금 1000원
+    else{ // 아니면 (30분 초과 이면)
+        money=parseInt((min-30)/10)*500+1000; // 10분 단위 이므로 1의 자릿수 제거, 10분마다*500원, 기본요금 1000원
+    }
+    if(money>20000){money=20000;}// 만일 요금이 2만원 초과하면 2만원으로 고정
+    html3+=`<span> ${money.toLocaleString()} 원 </span>`;
+
+    html3+=`<div>`; // div 닫기
+}
+document.write(html3);

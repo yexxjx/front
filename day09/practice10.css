@@ -14,12 +14,3 @@ li{list-style-type: none;}
     padding: 10px 20px;
     position: relative;
 }
-
-.submenu{
-    position: absolute;
-    width: 100%;
-    background-color: skyblue;
-    top:40px;
-}
-
-#plus>ul:hover .submenu{display: block;}
