@@ -1,0 +1,42 @@
+
+*{box-sizing: border-box;}
+a{text-decoration: none; color: black;}
+li{list-style-type: none;}
+
+#header>.menu>ul{
+    display: flex; justify-content: flex-end;
+    padding: 20px; margin: 0 auto;
+}
+
+.top>li{
+    border-right: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.icon{
+    padding-left: 20px;
+}
+
+.logo{
+    padding: 50px;
+}
+
+#bottom{
+    display: flex; 
+}
+
+.submenu{
+    display: flex;
+    margin: 30px;
+    padding-left: 20px;
+}
+
+.submenu>a{
+    padding-right: 20px;
+}
+
+.submenu>a:nth-of-type(2){
+    color: red;
+}
+
