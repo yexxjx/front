@@ -118,7 +118,8 @@ let locationArray = [ 'A1', 'B3', 'C2' ];
 let car=prompt("차량 번호");
 let result=carArray.indexOf(car);
 
-if(carArray.indexOf(car)<=2){console.log(locationArray[result]);}
+if(carArray.indexOf(car)>= 0 && carArray.indexOf(car)<=2){
+      console.log(locationArray[result]);}
 else{console.log("차량이 존재하지 않습니다.");}
 
 /*문제 10: 수강 신청 목록에서 과목 제외하기
@@ -131,6 +132,9 @@ let courseList = ['수학', '영어', '과학', '국어'];
 
 let courseList = ['수학', '영어', '과학', '국어'];
 let except=prompt("제외하고 싶은 과목");
-
-
+let result2=courseList.indexOf(except);
+if(courseList.indexOf(except)>=0 && courseList.indexOf(except)<=2){
+      courseList.splice(result2, 1);
+      console.log(courseList);
+}
 else{console.log("해당 과목은 신청 목록에 없습니다.");}
