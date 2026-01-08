@@ -71,13 +71,19 @@ li{list-style-type: none;}
     width: 100%
 }
 
-.explain{
+#main{
     margin: 0 auto;
     text-align: center;
-    padding: 50px;
 }
 
-.explain>p{
+.comment{
+    text-align: center;
+    padding: 50px;
     font-size: 12px;
     color: grey;
 }
+
+#items> #item{
+    width: 350px; height: 300px;
+}
+

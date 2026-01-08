@@ -1,0 +1,47 @@
+
+.box{
+    border: 1px solid red;
+    padding: 30px;
+}
+
+.back1{
+    background-color: aqua;
+    background-color: #00ffff;
+    background-color: purple;
+
+    /* rgba (0~255, 0~255, 0~255, 0~1 */
+    background-color: rgba(0, 0, 300, 0.2);
+}
+
+/* [1] 이미지 삽입할 때 img 대신에 배경으로 가능, 이미지 위에 텍스트 표현할 때 */
+.back2{
+   /* background-image : url("파일경로"); */
+   background-image: url("cat.jpg");
+
+   /* background-repeat : 반복 채움 */
+   background-repeat: no-repeat;
+
+   /* background-position : 배경 이미지 위치 설정 */
+   background-position: left;
+}
+
+.back3{
+    background-image: url(back.png);
+    background-repeat: repeat; /* 기본값 : 비어있는 공간을 반복 채움 */
+}
+
+.back4{
+    background-image: url(back.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* 비율 유지, 잘림 발생*/
+    background-position: center;
+    background-attachment: fixed; /* 스크롤 이동해도 배경 이미지는 고정된다 */
+}
+
+.box2{
+    width: 100px; height: 100px;
+    background-color: black;
+    background-image: url(naver.png);
+    background-repeat: no-repeat;
+    background-position: -170px -165px; /* 위치 : left, top */
+}
