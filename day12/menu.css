@@ -2,17 +2,17 @@
 a{text-decoration: none; color: black;}
 li{list-style-type: none;}
 
-body{background-color: white;}
-
 .pc1{
     width: 414px; height: 945px;
     position: relative ;
+    background-color: white;
 }
 
 .wrap{
     display: flex;
     justify-content: space-evenly;
     width: 100%; height: 100%;
+    background-color: #f8f8f8;
 }
 
 #setting{
