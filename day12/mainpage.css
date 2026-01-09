@@ -40,7 +40,7 @@ width: 100%;
  height: 100%;
 }
 
-/* 왼쪽 화면 */
+/* 왼쪽 화면--------------------------------------------------- */
 .pc1{
   width: 414px;
    position: relative ;
@@ -51,9 +51,10 @@ width: 100%;
 .content{
   background-color: white;
   text-align: center;
+
   
 }
-/* 헤더 */
+/* 헤더------------------------------- */
 
 .header{
  background-color: #fff;
@@ -75,7 +76,100 @@ width: 100%;
 padding: 10px 0px;
 }
 
-/* 메인 1 */
+/* 메인 1 --------------------------*/
+ .main{
+    position: relative;
+    z-index: 2;
+}
+.main0{
+  z-index: 2;
+  position: relative;
+
+}
+.main > a{
+  background-color: white;
+  position: relative;
+
+}
+
+
+.main > ul{
+  padding: 22px 0px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  z-index: 2;
+  width: 100%;
+}
+.main > ul > li{
+  padding: 0px 22.8px;
+  text-align: center;
+  z-index: 2;
+}
+
+.main > ul > li > a >p{    font-family: "Pretendard";
+
+}
+/* 메인 2 --------------------------*/
+.main2{
+  padding: 22px 0px;
+  background-color: #f4f4f4;
+  z-index: 2;
+  position: relative;
+}
+
+.main2 > h2{
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+  padding: 0px 10px;
+  
+}
+
+.main2 > h2> div{
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  
+}
+.main2 > h2> div >button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.review{
+  display: flex;
+}
+
+.pic1{
+  padding: 10px;
+  padding-top: 15px;
+
+}
+.pic2{
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.pic1 > div > a> img {
+    border-radius: 10px;
+}
+.pic2 > div > a> img {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.pic1 > div > div >p{
+  text-align: left;
+}
+.pic2 > div > div >p{
+  text-align: left;
+}
+
+.pic2 >div > img{
+
+}
 
 
 /* 푸터 ----------------------------------*/
@@ -94,6 +188,7 @@ padding: 10px 0px;
   bottom: 80px;
   z-index: 1;
   margin-top: 100px;
+  padding-left: 15px;
 }
 
 /*푸터 탑*/
@@ -136,7 +231,7 @@ span{
   position: sticky;
   bottom: 0px;
   background-color: white;
-  margin-bottom: 10px;
+  margin-bottom: -10px;
 }
 .footer_bottom_img{
   display: flex;
@@ -164,14 +259,16 @@ span{
 .푸터글{
   text-align: center;
   padding-bottom: 9px;
+ 
 }
+.푸터글 > a > p{ color: gray}
 
-
-/* 오른쪽 화면 */
+/* 오른쪽 화면 ----------------------------------------------*/
 .pc2{ 
   padding: 90px 0px 0px 30px;
   width: 300px;
   height: 832px;
+  
 }
 
 .right1{ 
