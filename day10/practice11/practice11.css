@@ -5,8 +5,9 @@ li{list-style-type: none;}
 
 #header>ul{
     display: flex; justify-content: flex-end;
-    padding: 10px; margin: 0 auto;
+    padding: 5px; margin: 0 auto;
     border-bottom: 2px solid lightgrey;
+    font-size: 12px;
 }
 
 .top>li{
@@ -37,6 +38,7 @@ li{list-style-type: none;}
 .menu>li{
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 13px;
 }
 
 .made{
@@ -71,19 +73,56 @@ li{list-style-type: none;}
     width: 100%
 }
 
-#main{
-    margin: 0 auto;
+#main>.mainimg{width: 100%;}
+
+#main>.title{
     text-align: center;
 }
 
 .comment{
     text-align: center;
-    padding: 50px;
-    font-size: 12px;
-    color: grey;
+    font-size: 10px;
+    margin: 20px 0px;
+    color: #999999;
 }
 
 #items> #item{
-    width: 350px; height: 300px;
+    width: 380px; margin: 20px 0px;
 }
 
+#items>#item>.itemimg{width: 100%;}
+.colorreview>.color>span{
+    width: 10px; height: 10px;
+    display: inline-block;
+    border: 1px solid #DBDBDB;
+}
+
+.iteminfo{
+    text-align: left;
+}
+
+.iteminfo>.colorreview{
+    display: flex; justify-content: space-between;
+    margin: 5px 0px;
+}
+
+.colorreview>.review{color:#999999;}
+.iteminfo>.itemname{margin: 5px 0px;}
+.itemname>.size{
+    font-size: 12px; color: #999999; margin: 1px 0px;
+}
+.iteminfo>.itemprice{position: relative; margin: 5px 0px;}
+.itemprice>.discount{
+    position: absolute; right:0px; top:0px;
+    font-size: 15px; color: red; font-weight: bold;
+}
+
+.itemprice>.price{
+    text-decoration: line-through;
+    color: #999999;
+}
+#items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

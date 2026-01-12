@@ -37,6 +37,22 @@ document.querySelector("#box3").innerHTML="박스3"; // 마크업 사이에 텍�
 function func1(){ // 매개변수x
     let value=document.querySelector(".myinput").value;
     console.log(value+"입력했군요.");
+    document.querySelector(".myinput").value=""; // 공백으로 초기화
 } // 반환 값x 
 // js에서 실행하는 방법 : let 결과=함수명(인지값);
 // html에서 실행하는 방법 : <마크업명 이벤트속성명="함수명(인지값)"/>
+
+
+function func2(){ // 주의할 점 : 입력상자(input/select/textarray등)만 가능함
+    document.querySelector(".title").innerHTML="js에서 넣어준 텍스트";
+}
+
+// [7] .style="css속성명.css속성값;"
+function func3(){
+    // 한 명령어(한 줄)에 (도트/접근연산자) 가 많아지면 중간에 변수활용
+    let title2=document.querySelector(".title2");
+    title2.style="color:white;";
+    title2.style.backgroundColor="blue"; // css는 -(하이픈) 불가능하므로 카멜표기법
+}
+
+// 카멜표기법이란> 낙타의 등 모양처럼, mycar > myCar, background-color > backgroundColor
