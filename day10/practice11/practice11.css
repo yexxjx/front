@@ -6,7 +6,7 @@ li{list-style-type: none;}
 #header>ul{
     display: flex; justify-content: flex-end;
     padding: 5px; margin: 0 auto;
-    border-bottom: 2px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
     font-size: 12px;
 }
 
@@ -17,35 +17,33 @@ li{list-style-type: none;}
 }
 
 .icon{
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .logo{
-    padding: 50px;
+    padding: 30px;
+}
+
+.logo>img{
+    width: 150px;
 }
 
 #bottom{
     display: flex;
-    margin: 0 auto;
     align-items: center;
 }
 
 #bottom>ul{
     display: flex;
-    padding: 30px;
+    padding: 10px;
 }
 
 .menu>li{
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 13px;
+    padding-right: 40px;
+    font-size: 12px;
 }
 
-.made{
-    position: relative;
-}
-
-.bigsize{
+.made, .bigsize{
     position: relative;
 }
 
@@ -53,9 +51,14 @@ li{list-style-type: none;}
     position: absolute;
     padding: 5px;
     display: none;
-    background-color: grey;
-    width: 100px; height: 100px;
+    background-color: white;
+    width: 100px; height: 130px;
     padding-top: 30px;
+}
+
+.submenu>li{
+    margin-top: 5px;
+    text-align: center;
 }
 
 .made:hover .submenu{display: block;}
@@ -65,15 +68,13 @@ li{list-style-type: none;}
     border: 1px solid white;
     border-bottom: 1px solid black;
 }
-.search>img{
-    width: 20px; height: 20px;
-}
 
-.mainimg>img{
-    width: 100%
+.search{
+    border-bottom: 1px solid black;
+    margin-left: 450px;
 }
-
-#main>.mainimg{width: 100%;}
+.search>input{border:none; padding: 5px; width: 130px; background-color: rgba(255, 255, 255, 0);}
+.search>img{width: 15px;}
 
 #main>.title{
     text-align: center;
@@ -87,7 +88,8 @@ li{list-style-type: none;}
 }
 
 #items> #item{
-    width: 380px; margin: 20px 0px;
+    width: 360px; margin: 20px 0px;
+    font-size: 10px;
 }
 
 #items>#item>.itemimg{width: 100%;}
@@ -109,7 +111,7 @@ li{list-style-type: none;}
 .colorreview>.review{color:#999999;}
 .iteminfo>.itemname{margin: 5px 0px;}
 .itemname>.size{
-    font-size: 12px; color: #999999; margin: 1px 0px;
+    font-size: 10px; color: #999999; margin: 1px 0px;
 }
 .iteminfo>.itemprice{position: relative; margin: 5px 0px;}
 .itemprice>.discount{
@@ -125,4 +127,7 @@ li{list-style-type: none;}
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 1600px;
+    margin: 0 auto;
 }
+

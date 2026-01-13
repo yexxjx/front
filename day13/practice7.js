@@ -123,3 +123,13 @@ function getTicketPrice(age){
   else{return "무료";}
 }
 console.log(getTicketPrice(7));
+
+/*
+변수의 종류 분류 시점 : 선언
+- 선언 : let/const/function 키워드가 작성된 위치
+
+변수 = 하나의 값/자료 저장
+- 전역변수 : {}에서 선언 안된.
+- 지역변수 : {}에서 선언 된.
+- 매개변수 : 인지값을 저장된.
+*/
