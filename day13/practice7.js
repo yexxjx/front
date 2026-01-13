@@ -1,68 +1,114 @@
-/*[ JS 함수 실습 ]*/
-/*실습 1: 성인 인증 함수
-나이(age)를 매개변수로 받아, 20세 이상이면 true를, 미만이면 false를 반환하는 isAdult 함수를 만드세요. isAdult(25)와 isAdult(17)의 결과를 각각 콘솔에 출력해 보세요.*/
+// [ JS 함수 실습 ]
+// 실습 1: 성인 인증 함수
+// 나이(age)를 매개변수로 받아, 20세 이상이면 true를, 미만이면 false를 반환하는 isAdult 함수를 만드세요. isAdult(25)와 isAdult(17)의 결과를 각각 콘솔에 출력해 보세요.*/
 function isAdult(x){
     if(x>=20){return true;}
     else{return false;}
 }
 let result1=isAdult(25);
 console.log(result1);
+console.log(isAdult(17));
 
-let result2=isAdult(17);
-console.log(result2);
-
-/*실습 2: 배열의 총합 구하기
-숫자로 이루어진 배열을 매개변수로 받아, for 반복문을 사용해 모든 요소의 합계를 구하여 반환하는 sumArray 함수를 만드세요. 아래 numbers 배열로 테스트해 보세요. */
+// 실습 2: 배열의 총합 구하기
+// 숫자로 이루어진 배열을 매개변수로 받아, for 반복문을 사용해 모든 요소의 합계를 구하여 반환하는 sumArray 함수를 만드세요. 아래 numbers 배열로 테스트해 보세요.
+// // 매개변수 : 배열, 리턴값 : 합계를 구하여 반환, 처리 : for 반복문을 사용해 모든 요소의 합
 const numbers = [10, 20, 30, 40, 50];
-function sumArray(numbers){console.log(numbers);}
+function sumArray(array){ // 매개변수란? 함수 호출 시 전달되는 인자값 연결되는 변수
+  //주의할 점 : 변수도 지역변수 특징으로 함수 밖 numbers를 인자로 전달하더라도 매개변수랑은 다르다
+  let sum=0;
+  for(let i=0; i<=array.length-1;i++){sum+=sum+array[i];}
+  return sum;
+}
+console.log(sumArray(numbers));
 
-/*실습 3: 가장 긴 단어 찾기
-문자열로 이루어진 배열을 매개변수로 받아, for 반복문을 사용해 가장 긴 단어를 찾아 반환하는 findLongestWord 함수를 만드세요. 아래 words 배열로 테스트해 보세요.
-const words = ['apple', 'banana', 'kiwi', 'strawberry'];*/
-
-
+// 실습 3: 가장 긴 단어 찾기
+// 문자열로 이루어진 배열을 매개변수로 받아, for 반복문을 사용해 가장 긴 단어를 찾아 반환하는 findLongestWord 함수를 만드세요. 아래 words 배열로 테스트해 보세요.
+const words = ['apple', 'banana', 'kiwi', 'strawberry'];
+function findLongestWord(array){
+  let longword=words[0]; // 첫번째 인덱스 값을 가장 긴 단어로 가정하고 시작
+  for(let index=1; index<=array.length-1;index++){
+    // 만약에 가장 긴 단어가 저장된 변수보다 index번째 단어가 더 길면
+    if(longword.length<array[index].length){longword=array[index];} // 가장 긴 단어를 저장하는 변수에 대입
+  }
+  return longword; // 함수 내 선언된 변수들은 함수가 종료되면 사라진다
+}
+console.log(findLongestWord(words));
 
 /*실습 4: 게임 점수 관리하기
 let userScore = 0; 전역 변수를 만드세요. gainScore() 함수는 userScore를 10 증가시키고, loseScore() 함수는 5 감소시킵니다.
 gainScore()를 세 번, loseScore()를 한 번 호출한 뒤, 최종 점수를 콘솔에 출력하세요.*/
 let userScore=0;
-function gainScore(){userscore+=10;}
+function gainScore(){userScore+=10;}
+function loseScore(){userScore-=5;}
 
-loseScore(){userscore-=5};
-
-gainScore();
-gainScore();
-gainScore();
+gainScore(); gainScore(); gainScore();
 loseScore();
-console.log(userscore);
+console.log(userScore);
 
-/*실습 5: 최고 점수 학생 찾기
-전역변수 students 배열 데이터를 이용하여 , 가장 높은 점수(score)를 가진 학생의 이름을 찾아 반환하는 findTopStudent 함수를 만드세요.
+// 실습 5: 최고 점수 학생 찾기
+// 전역변수 students 배열 데이터를 이용하여 , 가장 높은 점수(score)를 가진 학생의 이름을 찾아 반환하는 findTopStudent 함수를 만드세요.
 const students = [
   { name: '김철수', score: 85 },
   { name: '이영희', score: 92 },
   { name: '박민준', score: 78 }
-];*/
+];
+function findTopStudent(array){
+  let topstudent=students[0]; // 첫번째 학생을 최고 점수 가정 시작
+  for(let index=1; index<=array.length-1; index++){
+    if(topstudent.score<array[index].score){ // 만약에 최고 점수의 점수보다 index 번째 객체의 점수가 더 크면 < 객체 내 속성값 비교>
+      topstudent=students[index];}                                                                    // < 객체 대입>
+  }
+  return topstudent.name;
+}
+console.log(findTopStudent(students));
 
-/*실습 6: 상품 목록 페이지 만들기
-전역변수 products 배열 데이터를 이용하여, 각 상품을 소개하는 HTML 요소를 동적으로 만들어 페이지에 표시하는 renderProducts 함수를 만드세요.
-각 상품은 이름(<h4>), 가격(<p>), 재고(<p>)를 포함한 div로 묶여야 합니다.
+// 실습 6: 상품 목록 페이지 만들기
+// 전역변수 products 배열 데이터를 이용하여, 각 상품을 소개하는 HTML 요소를 동적으로 만들어 페이지에 표시하는 renderProducts 함수를 만드세요.
+// 각 상품은 이름(<h4>), 가격(<p>), 재고(<p>)를 포함한 div로 묶여야 합니다.
 const products = [
   { name: '노트북', price: 1200000, stock: 5 },
   { name: '모니터', price: 350000, stock: 12 },
   { name: '키보드', price: 80000, stock: 25 }
-];*/
+];
+
+function renderProducts(){
+  let html=''; // 구성한 html 문자열 저장하는 변수
+  for(let index=0; index<=products.length-1; index++){
+    let prod=products[index];
+    html+=`<div>
+            <h4> ${prod.name} </h4>
+            <p> ${prod.price} </p>
+            <p> ${prod.stock} </p>
+          </div>`; // 객체 하나씩 div를 구성하여 html에 추가 += vs 대입 =
+  }
+  document.write(html);
+}
+renderProducts();
 
 /*실습 7: 간단한 계산기
 num1, num2, operator ( '+', '-') 세 개의 매개변수를 받는 calculator 함수를 만드시오.
 operator가 '+'이면 두 수의 합을, '-'이면 두 수의 차를 콘솔에 출력하시오. (if문 사용)*/
+function calculator(num1, num2, operator){
+  if(operator=="+"){console.log(num1+num2);}
+  else if(operator=="-"){console.log(num1-num2);}
+}
+calculator(5,3,"+"); calculator(3,2,"-");
 
-
-/*실습 8: HTML 리스트(ul, li) 동적 생성
-todoList라는 할 일 목록이 담긴 전역 배열이 있습니다.
-renderList() 함수를 정의하시오. 이 함수는 todoList 배열을 순회하며 <li>할 일 내용</li> 형태의 HTML 문자열을 만듭니다.
-최종적으로 이 문자열을 HTML <ul> 태그로 표현하여 리스트를 화면에 그리시오.
-let todoList = ['장보기', '운동하기']*/
+// 실습 8: HTML 리스트(ul, li) 동적 생성
+// todoList라는 할 일 목록이 담긴 전역 배열이 있습니다.
+// renderList() 함수를 정의하시오. 이 함수는 todoList 배열을 순회하며 <li>할 일 내용</li> 형태의 HTML 문자열을 만듭니다.
+// 최종적으로 이 문자열을 HTML <ul> 태그로 표현하여 리스트를 화면에 그리시오.
+let todoList = ['장보기', '운동하기']
+function renderList(){
+  let html=`<ul>`;
+  for(let index=0; index<=todoList.length-1; index++){
+    let todo=todoList[index]; // index번째의 문자열 1개 호출
+    html+=`<li> ${todo} </li>`
+  }
+  html+= `</ul>`;
+  document.write(html);
+}
+renderList();
 
 /*실습 9: 입장료 계산 함수
 임의의 나이(age)를 매개변수로 받아 입장료를 반환하는 getTicketPrice 함수를 만드시오.
@@ -70,3 +116,10 @@ let todoList = ['장보기', '운동하기']*/
 8세 이상 19세 이하: "5,000원"
 20세 이상: "10,000원"
 계산된 가격 문자열을 반환(return)하시오.*/
+
+function getTicketPrice(age){
+  if(age>=20){return "10,000원";}
+  else if(age>=8){return "5,000원";}
+  else{return "무료";}
+}
+console.log(getTicketPrice(7));

@@ -8,7 +8,7 @@
 console.log(document); // 현재 js가 포함하는 HTML 그 자체 <객체표현>
 
 // [2] .write("") : 매개변수 : html 출력할 문자열
-// 매개변수 : html 출력할 뭄ㄴ자열, 반환값 : x
+// 매개변수 : html 출력할 문자열, 반환값 : x
 document.write("<h3> [2] 내장객체 함수 실행 </h3>");
 
 // [3] document.querySelector("css 선택자") : js에서 특정한 마크업 객체 반환함수

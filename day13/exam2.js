@@ -15,7 +15,6 @@ sayHello();
 function printSum(x,y){console.log(x+y);}
 printSum(5,10);
 
-
 /*예제 3: 값을 반환(return)하는 함수
 임의의 이름을 문자열(string)로 매개변수를 받아 "환영합니다, [이름]님!" 형식의 문자열을 반환하는 getWelcomeMessage 함수를 정의하시오.
 함수를 호출한 결과를 변수에 저장하고, 그 변수를 콘솔에 출력하시오. */
