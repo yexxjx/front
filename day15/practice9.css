@@ -1,16 +1,14 @@
 #wrap{
     margin: 0 auto;
     width: 1280px;
-    background-color: beige;
+    background-color: lightgrey;
 }
 
-#wrap>h2, #wrap>h6{
-    text-align: center;
-}
+#wrap>h1, #wrap>h6{text-align: center;}
 
 #wwrap{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #team, #member, #dayoff{
@@ -20,17 +18,16 @@
     background-color: white;
 }
 
-#team, #dayoff{
-    width: 300px;
-}
+#team, #dayoff{width: 250px;}
 
-#team>.teamname,.dayoffreq>select, .dayoffreq>input{
+.teamname, .membername, .position, .teamselect,
+.dayoffreq>select, .dayoffreq input, .dayoffreqdate input{
     border-radius: 5px;
     border: 1px solid lightgrey;
     padding: 10px;
 }
 
-#team>h2, .register>h2, .memberlist>h2, .dayoffreq>h2, .dayofflist>h2{
+#team>h3, .register>h3, .memberlist>h3, .dayoffreq>h3, .dayofflist>h3{
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 10px;
 }
@@ -39,7 +36,7 @@
     background-color: darkviolet;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 8px 15px;
     border-radius: 8px;
 }
 
@@ -52,10 +49,12 @@
 #team>table th, .memberlist>table th{
     background-color: #eeeeee;
     color: grey;
+    font-size: 13px;
 }
 #team>table td, .memberlist>table td{
     padding: 5px;
     border-bottom: 1px solid #eeeeee;
+    font-size: 13px;
 }
 
 #team>table button, .memberlist>table button{
@@ -63,43 +62,30 @@
     border: none;
 }
 
-#team>table .update, .memberlist>table .update{color: blue;}
-#team>table .delete, .memberlist>table .delete{color: red;}
-
-.img{
-    border: none;
+#team>table .update{
+    margin-left: 90px;
 }
 
-#member{
-    width: 550px;
-}
+#team>table .update, .memberlist>table .update{color: blue; font-size: 12px;}
+#team>table .delete, .memberlist>table .delete{color: red; font-size: 12px;}
 
-.membername, .position, .teamname {
-    border-radius: 5px;
-    border: 1px solid lightgrey;
-    padding: 5px;
-    margin: 5px;
-}
+.img{border: none;}
 
-.membername, .position{width: 230px;}
-.teamname{width: 240px;}
+#member{width: 550px;}
+
+.membername, .position {width: 230px;}
+.teamname {width: 160px;}
+.teamselect {width: 250px;}
+.blank{width: 220px;}
 
 .side1{
     display: flex;
     justify-content: space-evenly;
 }
 
-.team1{
-    padding: 5px;
-}
-
-.team2{
-    padding: 5px;
-    margin-left: 5px;
-}
-
 .side2{
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -107,26 +93,33 @@
     background-color: blue;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 5px 15px;
     border-radius: 8px;
+    margin-left: 480px;
 }
+
+.memberlist{
+    text-align: center;
+}
+
+.dayoffreqdate{
+    display: flex;
+    justify-content: space-around;
+}
+
+.dayoffreq>select{width: 240px;}
+.dayoffreqdate input{width: 90px;}
 
 .dayoffreq>button{
     background-color: darkcyan;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 15px;
     border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 185px;
 }
 
-.minjun, .seoyeon{
-    border: 1px solid blue;
-    border-radius: 10px;
-    margin: 20px;
-    width: 250px; height: 150px;
-}
-
-.minjun p, .seoyeon p{
-    font-size: 12px;
-    margin: 0 auto;
+.mj2, .sy2{
+    display: flex;
 }
