@@ -1,0 +1,132 @@
+#wrap{
+    margin: 0 auto;
+    width: 1280px;
+    background-color: beige;
+}
+
+#wrap>h2, #wrap>h6{
+    text-align: center;
+}
+
+#wwrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+#team, #member, #dayoff{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#team, #dayoff{
+    width: 300px;
+}
+
+#team>.teamname,.dayoffreq>select, .dayoffreq>input{
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+
+#team>h2, .register>h2, .memberlist>h2, .dayoffreq>h2, .dayofflist>h2{
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 10px;
+}
+
+#team>.add{
+    background-color: darkviolet;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+#team>table, .memberlist>table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#team>table th, .memberlist>table th{
+    background-color: #eeeeee;
+    color: grey;
+}
+#team>table td, .memberlist>table td{
+    padding: 5px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#team>table button, .memberlist>table button{
+    background-color: white;
+    border: none;
+}
+
+#team>table .update, .memberlist>table .update{color: blue;}
+#team>table .delete, .memberlist>table .delete{color: red;}
+
+.img{
+    border: none;
+}
+
+#member{
+    width: 550px;
+}
+
+.membername, .position, .teamname {
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding: 5px;
+    margin: 5px;
+}
+
+.membername, .position{width: 230px;}
+.teamname{width: 240px;}
+
+.side1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team1{
+    padding: 5px;
+}
+
+.team2{
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.side2{
+    display: flex;
+    align-items: center;
+}
+
+.register>button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.dayoffreq>button{
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.minjun, .seoyeon{
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin: 20px;
+    width: 250px; height: 150px;
+}
+
+.minjun p, .seoyeon p{
+    font-size: 12px;
+    margin: 0 auto;
+}
