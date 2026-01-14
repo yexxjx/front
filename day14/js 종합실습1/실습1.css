@@ -27,3 +27,38 @@
     border-radius: 5px;
     padding: 10px 20px;
 }
+
+#main>table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#main>table th{
+    background-color: lightgrey;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+#main>table img{
+    border-radius: 10px;
+}
+
+#main>table td{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#main>table button{
+   padding: 8px 13px;
+   border: none;
+   border-radius: 5px;
+   margin: 5px;
+   font-weight: bold;
+}
+
+
+#main>table .deleteBtn{background-color: rgb(255, 239, 242); color: red;}
+#main>table .updateBtn{background-color: rgb(241, 241, 255); color: blue;}
+#main>table img{width: 100px; height: 100px; object-fit: cover;} /* object-fit:cover; 비율 유지, 잘림 발생*/
+
