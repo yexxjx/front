@@ -12,7 +12,7 @@
 <body>
     <div id="wrap">
         <h1> 인사 관리 대시보드 </h1>
-        <h6> 부서, 사원, 휴가 통합 관리 시스템 </h6>
+        <p> 부서, 사원, 휴가 통합 관리 시스템 </p>
         <div id="wwrap">
             <div id="team">
                 <h3> 부서관리 </h3>
@@ -57,17 +57,17 @@
                     <h3> 사원 등록 </h3>
                     <div class="side1">
                         <div>
-                            <h5> 이름 </h5>
+                            <p class="common"> 이름 </p>
                             <input class="membername">
                         </div>
                         <div>
-                            <h5> 직급 </h5>
+                            <p class="common"> 직급 </p>
                             <input class="position">
                         </div>
                     </div>
                     <div class="side2">
                         <div class="team1">
-                            <h5> 부서 </h5>
+                            <p class="common"> 부서 </p>
                             <select class="teamselect">
                                 <option> 부서를 선택하세요 </option>
                                 <option> 개발팀 </option>
@@ -76,7 +76,7 @@
                             </select>
                         </div>
                         <div class="team2">
-                            <h5> 사진 </h5>
+                            <p> 사진 </p>
                             <input class="img" type="file">
                         </div>
                     </div>
@@ -145,7 +145,7 @@
             <div id="dayoff">
                 <div class="dayoffreq">
                     <h3> 사원 휴가 신청 </h3>
-                    <h5> 신청 사원 </h5>
+                    <p class="common"> 신청 사원 </p>
                     <select>
                         <option> 휴가 신청 사원을 선택하세요 </option>
                         <option> 김민준 </option>
@@ -155,15 +155,15 @@
                     </select>
                     <div class="dayoffreqdate">
                         <div>
-                            <h5> 휴가 시작일</h5>
+                            <p class="common"> 휴가 시작일</p>
                             <input type="date">
                         </div>
                         <div>
-                            <h5> 휴가 종료일 </h5>
+                            <p class="common"> 휴가 종료일 </p>
                             <input type="date">
                         </div>
                     </div>
-                    <h5> 휴가 사유 </h5>
+                    <p class="common"> 휴가 사유 </p>
                     <input class="blank" type="text" placeholder="예: 여름휴가">
                     <button> 신청 </button>
                 </div>
@@ -171,14 +171,16 @@
                     <h3> 휴가 신청 전체 목록 </h3>
                     <div class="mj">
                         <div class="mj2">
-                            <h5> 김민준 </h5><button> 신청취소</button>
+                            <p class="named"> 김민준 </p>
+                            <button> 신청취소</button>
                         </div>
                         <p> 2025-08-04 ~ 2025-08-04 </p>
                         <p> 사유: 병원 진료</p>
                     </div>
                     <div class="sy">
                         <div class="sy2">
-                            <h5> 이서연 </h5><button> 신청취소</button>
+                            <p class="named"> 이서연 </p>
+                            <button> 신청취소</button>
                         </div>
                         <p> 2025-07-21 ~ 2025-07-25 </p>
                         <p> 사유: 여름 휴가</p>
