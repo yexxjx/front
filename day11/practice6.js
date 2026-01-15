@@ -116,29 +116,24 @@ console.log(movieTitles);
 
 // 문제 7: 데이터 그룹화하기
 // 다음 team 배열을 department를 기준으로 그룹화하여, 아래 result와 같은 형태로 만드시오.
-// const team = [
-// { name: '철수', department: '개발팀' },
-// { name: '영희', department: '기획팀' },
-// { name: '민수', department: '개발팀' },
-// { name: '지혜', department: '기획팀' }
-// ];
 // 최종 결과 형태 (result)
 // {
 // '개발팀': ['철수', '민수'],
 // '기획팀': ['영희', '지혜']
 // }
 
+const team = [
+    { name: '철수', department: '개발팀' },{ name: '영희', department: '기획팀' },
+    { name: '민수', department: '개발팀' },{ name: '지혜', department: '기획팀' }
+];
+
 // 문제 8: 장바구니 총액 계산하기
 // 고객의 장바구니 정보를 담은 cart 배열과 상품 정보를 담은 productsInfo 배열이 있습니다.
 // cart 배열: 각 요소는 고객이 담은 상품의 id와 quantity(수량)를 가집니다.
 // productsInfo 배열: 각 요소는 상품의 고유 id와 price(가격)를 가집니다.
 // cart 배열을 기준으로, 장바구니에 담긴 모든 상품의 총 결제 금액을 계산하여 콘솔에 출력하세요.
-// const cart = [{ id: 1, quantity: 2 },{ id: 3, quantity: 1 }];
-// const productsInfo = [
-// { id: 1, price: 1000 },
-// { id: 2, price: 5000 }, // 장바구니에 없는 상품
-// { id: 3, price: 2500 }
-// ];
+const cart = [{ id: 1, quantity: 2 },{ id: 3, quantity: 1 }];
+const productsInfo = [{ id: 1, price: 1000 },{ id: 2, price: 5000 }, { id: 3, price: 2500 }];
 
 // 문제 9: 투표 결과 집계하기
 // 다음 votes 배열은 투표 결과를 나타냅니다. 각 후보가 몇 표를 받았는지 집계하여, 후보의 이름이 키이고 득표수가 값인 객체를 만들어 콘솔에 출력하시오.
@@ -150,16 +145,14 @@ console.log(movieTitles);
 // 조건 1: 평점(rating)은 10점 만점입니다.
 // 조건 2: 평점의 정수 부분만큼 꽉 찬 별(★)을, 10 - 정수 만큼 빈 별(☆)을 출력합니다. (예: 평점이 8.5이면 ★ 8개, ☆ 2개)
 // 조건 3: HTML에 웹툰 제목과 변환된 별점을 한 줄씩 출력합니다.
-// const webtoons = [
-// { title: '나 혼자만 레벨업', rating: 9.8 },
-// { title: '유미의 세포들', rating: 9.9 },
-// { title: '전지적 독자 시점', rating: 9.7 }
-// ];
 /* HTML 출력 예시:
  나 혼자만 레벨업 ★★★★★★★★★☆
  유미의 세포들 ★★★★★★★★★☆
  전지적 독자 시점 ★★★★★★★★★☆
 */
+
+const webtoons = [{ title: '나 혼자만 레벨업', rating: 9.8 },{ title: '유미의 세포들', rating: 9.9 },{ title: '전지적 독자 시점', rating: 9.7 }];
+
 
 // 문제11 : 공공데이터 포털 : 인천 부평구 맛집 현황 테이블 만들기
 // [구현 조건]
