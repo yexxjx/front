@@ -14,7 +14,7 @@ function boardPrint(){
         // 2-3: 하나씩 <tr> 구성
         html+=`<tr>
             <td> ${obj.no} </td>
-            <td> <a href="view.html?no=${obj.no}">${obj.title}</a> </td>
+            <td> <a href="view.html?no=${obj.no}"> ${obj.title}</a> </td>
         </tr>`
     }
     // 3. 출력
